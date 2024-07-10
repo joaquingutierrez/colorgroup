@@ -1,5 +1,5 @@
 import "./style.css"
-import { ServiceInfo, ServicesFrontPage, StripeSection } from "../../componentsContainer"
+import { ServiceInfo, ServicesFrontPage, StripeSection, WhyColorGroup } from "../../componentsContainer"
 
 const Services = () => {
 
@@ -50,6 +50,7 @@ const Services = () => {
             <StripeSection />
             <ServiceInfo title={marketing.title} items={marketing.items} />
             <ServiceInfo title={publicity.title} items={publicity.items} />
+            <WhyColorGroup />
         </main>
     )
 }
