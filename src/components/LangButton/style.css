@@ -27,7 +27,7 @@
 
 .dropDown-button::after {
     content: "";
-    background-color: black;
+    background-color: var(--text-color);
     position: absolute;
     height: 0.03rem;
     width: 0.6rem;
@@ -38,7 +38,7 @@
 
 .dropDown-button::before {
     content: "";
-    background-color: black;
+    background-color: var(--text-color);
     position: absolute;
     height: 0.03rem;
     width: 0.6rem;
