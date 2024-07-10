@@ -3,6 +3,8 @@ import { DiamondLogo } from "../../components"
 
 const ServiceInfo = ({ title, items }) => {
 
+    const itemsLength = items.length - 1
+
     return (
         <div className="servicesInfoContainer">
             <h2>{title}</h2>
@@ -12,7 +14,7 @@ const ServiceInfo = ({ title, items }) => {
                     <div key={index} className="servicesInfo-itemContainer">
                         <div className="servicesInfo-item-textContainer">
                             <h3>{item.title}</h3>
-                            <p>{item.desc}</p>
+                            <p className={`${itemsLength === index ? "servicesInfo-item-textMargin" : ""}`}>{item.desc}</p>
                         </div>
                         <ul className="servicesInfo-item-list">
                             {item.list.map((itemList, index) => (

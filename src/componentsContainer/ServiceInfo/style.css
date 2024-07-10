@@ -8,7 +8,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-bottom: 200px;
 }
 
 .servicesInfoContainer h2 {
@@ -30,6 +29,10 @@
 .servicesInfo-itemsContainer {
     box-sizing: border-box;
     margin-left: 54px;
+}
+
+.servicesInfo-item-textMargin {
+    margin-bottom: 200px!important;
 }
 
 .servicesInfo-itemContainer {

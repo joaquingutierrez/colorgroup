@@ -1,5 +1,4 @@
 .diamondLogo {
-    width: 16px;
-    height: 16px;
     background-color: var(--text-color);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
