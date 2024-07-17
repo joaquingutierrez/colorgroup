@@ -8,4 +8,37 @@
     line-height: 1.875rem;
     width: 11.75rem;
     height: 3.125rem;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.2s ease-in-out;
+}
+
+.customButton:hover {
+    cursor: pointer;
+}
+
+.customButton::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color);
+    z-index: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.customButton:hover::before {
+    transform: translateY(0);
+}
+
+.customButton:hover {
+    color: var(--white-color);
+}
+
+.customButton span {
+    position: relative;
+    z-index: 1;
 }
