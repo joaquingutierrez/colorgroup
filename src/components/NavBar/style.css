@@ -50,3 +50,26 @@
     position: relative;
     z-index: 1;
 }
+
+.navLink-line-animation {
+    position: relative;
+}
+
+.navLink-line-animation::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color);
+    transition: 0.2s ease-in-out;
+    position:absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navLink-line-animation:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}

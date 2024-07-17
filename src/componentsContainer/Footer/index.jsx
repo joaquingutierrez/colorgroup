@@ -26,10 +26,10 @@ const Footer = ({ links }) => {
                 </div>
                 <div className="footer-linksContainer">
                     <ul>
-                        <li><Link to="/">INICIO</Link></li>
+                        <li className="navLink-line-animation"><Link to="/">INICIO</Link></li>
                         {links.map((item, index) => {
                             return (
-                                <li key={index}><Link to={item.path}>{item.title}</Link></li>
+                                <li className="navLink-line-animation" key={index}><Link to={item.path}>{item.title}</Link></li>
                             )
                         })}
                     </ul>
