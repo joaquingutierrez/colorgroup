@@ -6,16 +6,31 @@
     align-items: center;
 }
 
-.homeFrontPage-videoTextContainer {}
+.homeFrontPage-videoTextContainer {
+    width: 480px;
+    max-height: 1px;
+    position: relative;
+}
 
 .homeFrontPage-videoContainer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 480px;
     height: 480px;
+    max-height: 480px;
     position: relative;
+    transition: 1s ease-in-out;
+}
+
+.homeFrontPage-videoContainer-startPosition {
+    max-height: 0;
+    transform-origin: center;
 }
 
 .homeFrontPage-titleContainer {
     width: fit-content;
+    transition: 1s ease-in-out;
 }
 
 .homeFrontPage-titleContainer h2 {
@@ -37,20 +52,37 @@
     left: 0;
 }
 
-.homeFrontPage-titleContainer:nth-of-type(1) {
+.homeFrontPage-titleContainer1 {
     transform: rotateZ(-90deg);
 }
 
-.homeFrontPage-titleContainer:nth-of-type(3) {
+.homeFrontPage-titleContainer2 {
     transform: rotateZ(90deg);
 }
 
+.homeFrontPage-titleContainer1-startPosition {
+    transform: rotateZ(-90deg) translateX(150%);
+}
+
+.homeFrontPage-titleContainer2-startPosition {
+    transform: rotateZ(90deg) translateX(150%);
+}
+
 .homeFrontPage-listContainer {
+    position: absolute;
+    width: 100%;
+    bottom: -366px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     padding: 0;
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.homeFrontPage-listContainer-startPosition {
+    opacity: 0;
 }
 
 .homeFrontPage-listContainer li {
