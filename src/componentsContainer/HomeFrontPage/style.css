@@ -1,6 +1,19 @@
 .homeFrontPageContainer {
     height: 100vh;
     min-height: 700px;
+    overflow-y: scroll;
+}
+
+.homeFrontPage-wrapper {
+    height: 300vh;
+    width: 100%;
+}
+
+.homeFrontPage-wrapperInfo {
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +39,11 @@
 .homeFrontPage-videoContainer-startPosition {
     max-height: 0;
     transform-origin: center;
+}
+
+.homeFrontPage-videoContainer-setBigger {
+    width: 100vw;
+    height: 100vh;
 }
 
 .homeFrontPage-titleContainer {
