@@ -1,9 +1,33 @@
+import { useEffect, useState } from "react"
+
 import "./style.css"
+import { HomeFrontPage, LoadingScreen } from "../../componentsContainer"
 
 const Home = () => {
 
+    const [isLoading, setIsLoading] = useState(true)
+    const [isFinishLoading, setIsFinishLoading] = useState(false)
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setIsLoading(false)
+            setTimeout(()=>{
+                setIsFinishLoading(true)
+            },[4000])
+        },[5000])
+    },[])
+
+    const handleLoading = () => {
+    }
+
     return (
-        <h2>Home</h2>
+        <main>
+            {!isFinishLoading ? (
+                <LoadingScreen loading={isLoading} />
+            ) : (
+                <HomeFrontPage />
+            )}
+        </main>
     )
 }
 
