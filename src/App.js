@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import './App.css';
 import { Home, Services, About, Contact } from "./views"
-import { Header, Footer } from "./componentsContainer";
+import { Header, Footer, NotFoundPage } from "./componentsContainer";
 
 function App() {
 
@@ -30,6 +30,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer links={links} />
     </BrowserRouter>
