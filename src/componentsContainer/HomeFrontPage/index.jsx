@@ -5,11 +5,13 @@ import VideoBG from "../../components/VideoBG"
 import home_frontPageVideo from "../../assets/home/home_frontPageVideo.mp4"
 import DiamondLogo from "../../components/DiamondLogo"
 import useScroll from "../../customHooks/useScroll"
+import useIntersectionObserver from "../../customHooks/useIntersectionObserver"
 
 const HomeFrontPage = () => {
 
     const [animationStart, setAnimationStart] = useState(false)
     const { isAtTop: isAtTopMarker1, elementRef: marker1Ref, scrollContainerRef } = useScroll()
+    const isScrollContainerVisible = useIntersectionObserver(scrollContainerRef, { threshold: 0.9 });
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -25,10 +27,10 @@ const HomeFrontPage = () => {
                     <div className={`homeFrontPage-titleContainer homeFrontPage-titleContainer1 ${animationStart ? "" : "homeFrontPage-titleContainer1-startPosition"}`}>
                         <h2>AGENCIA</h2>
                     </div>
+                    <div className={`homeFrontPage-videoContainer ${animationStart ? "" : "homeFrontPage-videoContainer-startPosition"} ${isAtTopMarker1 ? "homeFrontPage-videoContainer-setBigger" : ""} ${isScrollContainerVisible ? "" : "homeFrontPage-videoContainer-filter"}`}>
+                        <VideoBG video={home_frontPageVideo} />
+                    </div>
                     <div className="homeFrontPage-videoTextContainer">
-                        <div className={`homeFrontPage-videoContainer ${animationStart ? "" : "homeFrontPage-videoContainer-startPosition"} ${isAtTopMarker1 ? "homeFrontPage-videoContainer-setBigger" : ""}`}>
-                            <VideoBG video={home_frontPageVideo} />
-                        </div>
                         <ul className={`homeFrontPage-listContainer ${animationStart ? "" : "homeFrontPage-listContainer-startPosition"}`}>
                             <li>Calidad</li>
                             <li><DiamondLogo size={16} /></li>

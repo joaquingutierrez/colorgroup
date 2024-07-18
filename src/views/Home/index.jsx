@@ -6,7 +6,7 @@ import { HomeFrontPage, LoadingScreen } from "../../componentsContainer"
 const Home = () => {
 
     const [isLoading, setIsLoading] = useState(true)
-    const [isFinishLoading, setIsFinishLoading] = useState(true) /* Cambiar a false cuando termine la pagina*/
+    const [isFinishLoading, setIsFinishLoading] = useState(false) /* Cambiar a false cuando termine la pagina*/
 
     useEffect(()=>{
         setTimeout(()=>{
