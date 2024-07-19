@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 import "./style.css"
-import { HomeFrontPage, HomeOurServices, LoadingScreen } from "../../componentsContainer"
+import { HomeAboutUs, HomeFrontPage, HomeOurServices, LoadingScreen } from "../../componentsContainer"
 
 const Home = () => {
 
@@ -28,6 +28,7 @@ const Home = () => {
                 <>
                     <HomeFrontPage />
                     <HomeOurServices />
+                    <HomeAboutUs />
                 </>
             )}
         </main>
