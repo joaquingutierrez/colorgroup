@@ -1,0 +1,108 @@
+.itemsGalleryContainer {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.itemsGallery-imgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.itemsGallery-imgContainerSelected {
+    opacity: 1;
+}
+
+.itemsGallery-imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.itemsGallery-titlesContainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemsGallery-titlesContainer li {
+    font-size: 6.25rem;
+    font-weight: 700;
+    line-height: 7.813rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    width: fit-content;
+}
+
+.itemsGallery-selectedTitle {
+    color: var(--white-color);
+}
+.itemsGallery-notSelectedTitle {
+    color: var(--white-color);
+    opacity: 0.4;
+}
+
+.itemsGallery-textAsideContainer {
+    position: absolute;
+    right: -100%;
+    height: 100%;
+    width: 460px;
+    transition: 0.4s ease-in-out;
+    background-color: #fff;
+    padding-top: 120px;
+    padding-left: 65px;
+    padding-right: 65px;
+    box-sizing: border-box;
+}
+
+.itemsGallery-textAsideContainer-selected {
+    right: 0;
+}
+
+.itemsGallery-textAsideContainer p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.itemsGallery-textAsideContainer h3 {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.563rem;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    color: var(--red-color);
+}
+
+.itemsGallery-textAsideContainer h3::after {
+    content: "";
+    background-color: var(--red-color);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0.6rem;
+    left: 0;
+}
