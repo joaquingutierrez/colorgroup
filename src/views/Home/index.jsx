@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react"
 
 import "./style.css"
-import { HomeFrontPage, LoadingScreen } from "../../componentsContainer"
+import { HomeFrontPage, HomeOurServices, LoadingScreen } from "../../componentsContainer"
 
 const Home = () => {
 
     const [isLoading, setIsLoading] = useState(true)
     const [isFinishLoading, setIsFinishLoading] = useState(true) /* Cambiar a false cuando termine la pagina*/
 
-    useEffect(()=>{
-        setTimeout(()=>{
+    useEffect(() => {
+        setTimeout(() => {
             setIsLoading(false)
-            setTimeout(()=>{
+            setTimeout(() => {
                 setIsFinishLoading(true)
-            },[4000])
-        },[5000])
-    },[])
+            }, [4000])
+        }, [5000])
+    }, [])
 
     const handleLoading = () => {
     }
@@ -25,7 +25,10 @@ const Home = () => {
             {!isFinishLoading ? (
                 <LoadingScreen loading={isLoading} />
             ) : (
-                <HomeFrontPage />
+                <>
+                    <HomeFrontPage />
+                    <HomeOurServices />
+                </>
             )}
         </main>
     )
