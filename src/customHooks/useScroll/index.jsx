@@ -6,20 +6,23 @@ const useScroll = () => {
     const scrollContainerRef = useRef(null);
 
     const handleScroll = () => {
-        if (scrollContainerRef.current && elementRef.current) {
+        if (elementRef.current) {
             const rect = elementRef.current.getBoundingClientRect();
-            const containerRect = scrollContainerRef.current.getBoundingClientRect();
-            setIsAtTop(rect.top <= containerRect.top);
-            console.log(rect.top <= containerRect.top)
+            if (scrollContainerRef.current) {
+                const containerRect = scrollContainerRef.current.getBoundingClientRect();
+                setIsAtTop(rect.top <= containerRect.top);
+            } else {
+                setIsAtTop(rect.top <= 0);
+            }
         }
     };
 
     useEffect(() => {
-        const currentScrollContainer = scrollContainerRef.current;
+        const currentScrollContainer = scrollContainerRef.current || window;
 
         if (currentScrollContainer) {
             currentScrollContainer.addEventListener('scroll', handleScroll);
-            handleScroll(); // Ejecutar una vez para configurar el estado inicial
+            handleScroll();
         }
 
         return () => {

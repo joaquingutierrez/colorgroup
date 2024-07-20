@@ -2,14 +2,14 @@ import { NavLink } from "react-router-dom"
 
 import "./style.css"
 
-const NavBar = ({links}) => {
+const NavBar = ({ links }) => {
 
     return (
         <nav className="navbarContainer">
             <ul>
-                {links.map(item=>{
+                {links.map((item, index) => {
                     return (
-                        <li className={item.special ? "navLink-special" : "navLink-line-animation"}>
+                        <li key={index} className={item.special ? "navLink-special" : "navLink-line-animation"}>
                             <NavLink to={item.path}>{item.title}</NavLink>
                         </li>
                     )

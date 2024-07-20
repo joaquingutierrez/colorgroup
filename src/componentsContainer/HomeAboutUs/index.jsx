@@ -1,10 +1,53 @@
+import { Link } from "react-router-dom"
+
 import "./style.css"
+import useScroll from "../../customHooks/useScroll"
 
 const HomeAboutUs = () => {
-    
+
+    const { isAtTop: isAtTopMarker1, elementRef: marker1Ref } = useScroll()
+    const { isAtTop: isAtTopMarker2, elementRef: marker2Ref } = useScroll()
+    const { isAtTop: isAtTopMarker3, elementRef: marker3Ref } = useScroll()
+    const { isAtTop: isAtTopMarker4, elementRef: marker4Ref } = useScroll()
+    const { isAtTop: isAtTopMarker5, elementRef: marker5Ref } = useScroll()
+    const { isAtTop: isAtTopMarker6, elementRef: marker6Ref } = useScroll()
+    const { isAtTop: isAtTopMarker7, elementRef: marker7Ref } = useScroll()
+    const { isAtTop: isAtTopMarker8, elementRef: marker8Ref } = useScroll()
+    const { isAtTop: isAtTopMarker9, elementRef: marker9Ref } = useScroll()
+
     return (
         <section className="homeAboutUsContainer">
-            HomeAboutUs
+            <div className="homeAboutUsMarkerContainer">
+                <div ref={marker1Ref} className="homeAboutUsMarker"></div>
+                <div ref={marker2Ref} className="homeAboutUsMarker"></div>
+                <div ref={marker3Ref} className="homeAboutUsMarker"></div>
+                <div ref={marker4Ref} className="homeAboutUsMarker"></div>
+                <div ref={marker5Ref} className="homeAboutUsMarker"></div>
+                <div ref={marker6Ref} className="homeAboutUsMarker"></div>
+                <div ref={marker7Ref} className="homeAboutUsMarker"></div>
+                <div ref={marker8Ref} className="homeAboutUsMarker"></div>
+                <div ref={marker9Ref} className="homeAboutUsMarker"></div>
+            </div>
+            <div className="homeAboutUs-itemsContainer">
+                <div className="homeAboutUs-items-ball"></div>
+                <div className="homeAboutUs-itemContainer">
+                    <h3 className={`homeAboutUs-item-title ${isAtTopMarker1 ? "homeAboutUs-item-elementFadeIn" : ""}`}>Paquetes de Servicios a Medida</h3>
+                    <p className={`homeAboutUs-item-desc ${isAtTopMarker2 ? "homeAboutUs-item-elementFadeIn" : ""}`}>Solución integral para diseño, marketing y producción, todo en un solo lugar.</p>
+                </div>
+                <div className="homeAboutUs-itemContainer">
+                    <h3 className={`homeAboutUs-item-title ${isAtTopMarker3 ? "homeAboutUs-item-elementFadeIn" : ""}`}>Soluciones Escalables</h3>
+                    <p className={`homeAboutUs-item-desc ${isAtTopMarker4 ? "homeAboutUs-item-elementFadeIn" : ""}`}>Ajusta tus servicios sin recargos ni trámites a medida que tu empresa crece.</p>
+                </div>
+                <div className="homeAboutUs-itemContainer">
+                    <h3 className={`homeAboutUs-item-title ${isAtTopMarker5 ? "homeAboutUs-item-elementFadeIn" : ""}`}>Servicio Personalizado</h3>
+                    <p className={`homeAboutUs-item-desc ${isAtTopMarker6 ? "homeAboutUs-item-elementFadeIn" : ""}`}>Comunicación directa con profesionales para cumplir tus expectativas.</p>
+                </div>
+            </div>
+            <div>
+                <h2>TRANSFORMAMOS TUS IDEAS EN CREATIVIDAD VISUAL</h2>
+                <p>Estamos aquí para potenciar tu presencia, mejorar tu impacto y llevar tu marca al siguiente nivel. Con pasión y dedicación, convertimos tus sueños en realidad visual.</p>
+                <Link>Sobre Nostros</Link>
+            </div>
         </section>
     )
 }
