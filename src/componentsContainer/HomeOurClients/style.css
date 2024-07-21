@@ -1,0 +1,38 @@
+.homeOurClientesContainer {
+    margin-top: 158px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.homeOurClientesContainer h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.homeOurClients-imgsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.homeOurClients-imgContainer {
+    width: 200px;
+    height: 200px;
+    transition: 0.4s ease-in-out;
+}
+
+.homeOurClients-imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.homeOurClients-imgContainer-animation:nth-last-of-type(2n) {
+    transform: translateY(100px);
+}
+
+.homeOurClients-imgContainer-animation:nth-last-of-type(2n-1) {
+    transform: translateY(-100px);
+}
