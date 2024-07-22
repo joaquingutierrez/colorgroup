@@ -59,7 +59,15 @@
     width: 30%;
     height: 55%;
     position: absolute;
+    background-color: #fff;
+}
+
+.aboutDescription-imgContainer-whiteBox1 {
     left: -1px;
     bottom: -1px;
-    background-color: #fff;
+}
+
+.aboutDescription-imgContainer-whiteBox2 {
+    right: -1px;
+    top: -1px;
 }

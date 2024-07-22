@@ -12,8 +12,9 @@ const AboutDescription = () => {
                 <p>Nuestro objetivo es impulsar el crecimiento de nuestros clientes para que ellos se conviertan en el mejor testimonio de la calidad de nuestro trabajo, asegurándonos en todo momento de que el resultado final de cada trabajo cumpla todas las expectativas que se planteen al momento de la contratación.</p>
             </div>
             <div className="aboutDescription-imgContainer">
-                <div className="aboutDescription-imgContainer-whiteBox"></div>
+                <div className="aboutDescription-imgContainer-whiteBox aboutDescription-imgContainer-whiteBox1"></div>
                 <img loading="lazy" src={AboutDescriptionImg} alt="Personas trabajando con computadoras arriba de una mesa" />
+                <div className="aboutDescription-imgContainer-whiteBox aboutDescription-imgContainer-whiteBox2"></div>
             </div>
         </section>
     )
