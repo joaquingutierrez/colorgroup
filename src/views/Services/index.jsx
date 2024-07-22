@@ -1,7 +1,11 @@
 import "./style.css"
 import { Enhance, ServiceInfo, ServicesFrontPage, StripeSection, WhyColorGroup } from "../../componentsContainer"
+import useScroll from "../../customHooks/useScroll"
 
 const Services = () => {
+
+    const { isAtTop: isAtTopMaker1, elementRef: marker1Ref } = useScroll()
+    const { isAtTop: isAtTopMaker2, elementRef: marker2Ref } = useScroll()
 
     const marketing = {
         title: "Marketing Digital",
@@ -21,7 +25,7 @@ const Services = () => {
             list: ["Integración de Redes", "Gestión de Ventas", "Email Marketing", "Análisis de datos", "Gestión Todo En Uno"]
         }
 
-    ]
+        ]
     }
 
     const publicity = {
@@ -41,16 +45,24 @@ const Services = () => {
             desc: "Realizamos diseños en vinilos de la mejor calidad, de alta resistencia de acuerdo a lo que requiera el proyecto. Realizamos la instalación del vinilo en el lugar o te lo enviamos a tu domicilio listo para colocar.",
             list: ["Vinilos impresos", "Vinilos calandrados", "Vinilos troquelados", "Stickers", "Venta y colocación"]
         }
-    ]
+        ]
     }
 
     return (
         <main>
             <ServicesFrontPage />
             <StripeSection />
-            <ServiceInfo title={marketing.title} items={marketing.items} />
-            <ServiceInfo title={publicity.title} items={publicity.items} />
-            <WhyColorGroup />
+            <div className="services-infoAndWhyContainer">
+                <div className={`services-infoAndWhyWrapper services-infoAndWhyWrapper-z1 ${isAtTopMaker1 ? "services-info-translate" : ""}`}>
+                    <ServiceInfo title={marketing.title} items={marketing.items} />
+                </div>
+                <div ref={marker1Ref} className={`services-infoAndWhyWrapper services-infoAndWhyWrapper-z2 ${isAtTopMaker2 ? "services-info-translate" : ""}`}>
+                    <ServiceInfo title={publicity.title} items={publicity.items} />
+                </div>
+                <div ref={marker2Ref} className="services-infoAndWhyWrapper2">
+                    <WhyColorGroup />
+                </div>
+            </div>
             <Enhance />
         </main>
     )

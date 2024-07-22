@@ -1,0 +1,28 @@
+.services-infoAndWhyContainer {
+    position: relative;
+    height: 500vh;
+}
+
+.services-infoAndWhyWrapper {
+    position: sticky;
+    top: 0;
+    transform: translateY(0%);
+    transition: 0.4s ease-in-out;
+}
+
+.services-infoAndWhyWrapper2 {
+    position: sticky;
+    top: 0;
+}
+
+.services-infoAndWhyWrapper-z1 {
+    z-index: 4;
+}
+
+.services-infoAndWhyWrapper-z2 {
+    z-index: 3;
+}
+
+.services-info-translate {
+    transform: translateY(-150%);
+}

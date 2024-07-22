@@ -1,13 +1,14 @@
 .servicesInfoContainer {
     min-height: 100px;
     margin-top: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
     display: grid;
     grid-template-columns: 1fr 1px 2fr;
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: var(--white-color);
 }
 
 .servicesInfoContainer h2 {
