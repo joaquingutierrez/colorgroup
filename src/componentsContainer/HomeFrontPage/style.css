@@ -66,8 +66,8 @@
 }
 
 .homeFrontPage-videoContainer-setBigger {
-    width: 100vw;
-    height: 100vh;
+    width: 100vw !important;
+    height: 100vh !important;
     top: 0;
     max-height: 100vh;
     transform: none;
@@ -173,4 +173,37 @@
     }
 }
 
-@media (width < 800px) {}
+@media (width < 800px) or (height < 640px) {
+    .homeFrontPage-videoTextContainer {
+        width: 211px;
+    }
+
+    .homeFrontPage-videoContainer {
+        width: 211px;
+        height: 211px;
+    }
+
+    .homeFrontPage-titleContainer {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+
+    .homeFrontPage-titleContainer h2 {
+        font-size: 5rem;
+        line-height: 6.25rem;
+    }
+
+    .homeFrontPage-listContainer {
+        bottom: -200px;
+    }
+
+    .homeFrontPage-listContainer li {
+        font-size: 0.875rem;
+        line-height: 1.094rem;
+    }
+
+    .homeFrontPage-listContainer li:nth-of-type(2),
+    .homeFrontPage-listContainer li:nth-of-type(4) {
+        transform: scale(0.4);
+    }
+}
