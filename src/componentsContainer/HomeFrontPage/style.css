@@ -74,8 +74,11 @@
 }
 
 .homeFrontPage-titleContainer {
-    width: fit-content;
+    width: 0px;
     transition: 1s ease-in-out;
+    margin-left: 520px;
+    margin-right: 520px;
+    position: relative;
 }
 
 .homeFrontPage-titleContainer h2 {
@@ -84,7 +87,10 @@
     line-height: 15.625rem;
     margin: 0;
     color: var(--red-color);
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
 }
 
 .homeFrontPage-titleContainer h2::after {
@@ -136,3 +142,35 @@
     font-weight: 400;
     line-height: 2.5rem;
 }
+
+@media (799px < width < 1137px) or (height < 850px) {
+    .homeFrontPage-videoTextContainer {
+        width: 430px;
+    }
+
+    .homeFrontPage-videoContainer {
+        width: 430px;
+        height: 430px;
+    }
+
+    .homeFrontPage-titleContainer {
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+
+    .homeFrontPage-titleContainer h2 {
+        font-size: 9.375rem;
+        line-height: 11.719rem;
+    }
+
+    .homeFrontPage-listContainer {
+        bottom: -300px;
+    }
+
+    .homeFrontPage-listContainer li {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+}
+
+@media (width < 800px) {}
