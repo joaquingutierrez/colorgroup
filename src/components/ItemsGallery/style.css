@@ -10,7 +10,7 @@
     position: sticky;
     top: 0;
     overflow: hidden;
-    z-index: -1;
+    z-index: 3;
 }
 
 .itemsGallery-imgContainer {
@@ -59,6 +59,7 @@
 .itemsGallery-selectedTitle {
     color: var(--white-color);
 }
+
 .itemsGallery-notSelectedTitle {
     color: var(--white-color);
     opacity: 0.4;
@@ -115,4 +116,6 @@
     height: 100vh;
     background-color: var(--light-gray);
     width: 100%;
+    position: relative;
+    z-index: 5;
 }

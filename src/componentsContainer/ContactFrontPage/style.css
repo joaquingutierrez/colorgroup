@@ -2,7 +2,8 @@
     position: relative;
     color: var(--white-color);
     overflow: hidden;
-    height: 51.438rem;
+    height: 100vh;
+    min-height: 700px;
 }
 
 .contactFrontPage-bg {
@@ -30,17 +31,27 @@
 .contactFrontPage-title1 {
     position: absolute;
     left: 80px;
-    top: 204px;
+    top: 44.04%;
 }
 
 .contactFrontPage-title2 {
     position: absolute;
-    left: 611px;
-    top: 368px;
+    left: 35.35%;
+    top: 58.72%;
+}
+
+.contactFrontPage-title2::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: 1.4rem;
 }
 
 .contactFrontPage-p {
     position: absolute;
     left: 80px;
-    bottom: 110px;
+    top: 81.55%;
 }

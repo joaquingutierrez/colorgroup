@@ -1,7 +1,7 @@
 .aboutFrontPageContainer {
     width: 100%;
     height: 100vh;
-    min-height: 700px;
+    min-height: 1000px;
     position: relative;
 }
 
@@ -16,24 +16,30 @@
 }
 
 .aboutFrontPage-title1 {
-    top: 300px;
-    left: 250px;
-/*     top: 27%;
-    left: 6%; */
+    left: 10.93%;
+    top: 30.61%;
 }
 
 .aboutFrontPage-title2 {
-    top: 500px;
-    left: 864px;
-/*     bottom: 34%;
-    right: 17%; */
+    left: 50%;
+    top: 55.95%;
+}
+
+.aboutFrontPage-title2::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: 1.9rem;
 }
 
 .aboutFrontPage-quoteContainer {
     position: absolute;
-    right: 249px;
-    bottom: 67px;
-    width: 600px;
+    left: 50.69%;
+    top: 82.81%;
+    width: 34.89%;
 }
 
 .aboutFrontPage-quote1 {
