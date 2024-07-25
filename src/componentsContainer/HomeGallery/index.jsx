@@ -91,7 +91,7 @@ const HomeGallery = () => {
 
     return (
         <section className="homeGallerySectionContainer">
-            {width < 835 ? (<>
+            {width < 1026 ? (<>
                 <img src={imgs[4]} alt="" />
                 <div className="homeGallerySectionContainer-infoContainer">
                     <h2>Un ecosistema integral de soluciones</h2>

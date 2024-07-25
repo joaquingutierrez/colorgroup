@@ -135,7 +135,7 @@
         left: 30px;
         bottom: 307px;
         color: var(--white-color);
-        width: 55%;
+        width: 530px;
     }
 
     .homeGallerySectionContainer-infoContainer h2 {
@@ -143,6 +143,8 @@
         font-weight: 700;
         line-height: 2rem;
         letter-spacing: -0.01em;
+        margin: 0;
+        margin-bottom: 16px;
     }
 
     .homeGallerySectionContainer-infoContainer p {
@@ -167,4 +169,26 @@
 
 }
 
-@media (width < 800px) {}
+@media (width < 800px) {
+    .homeGallerySectionContainer-infoContainer {
+        left: 0;
+        bottom: 200px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 23px;
+        padding-right: 17px;
+    }
+
+    .homeGallerySectionContainer-infoContainer h2 {
+        line-height: 1.688rem;
+        width: 319px;
+    }
+
+    .homeGallerySectionContainer-infoContainer p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .homeGallerySectionContainer-linkContainer {
+        right: 17px;
+    }
+}
