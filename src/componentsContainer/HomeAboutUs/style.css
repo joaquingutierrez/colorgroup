@@ -177,6 +177,7 @@
     .homeAboutUsContainer {
         background-color: var(--white-color);
         height: fit-content;
+        margin-top: 100px;
     }
 
     .homeAboutUsContainer ul {
@@ -193,6 +194,7 @@
         margin: 0;
         margin-bottom: 16px;
     }
+
     .homeAboutUsContainer p {
         font-size: 1.125rem;
         font-weight: 400;
@@ -215,12 +217,15 @@
         font-weight: 700;
         line-height: 2rem;
         letter-spacing: -0.01em;
+        margin: 0;
+        margin-bottom: 16px;
     }
 
     .aboutUsVideoContainer p {
         font-size: 1.125rem;
         font-weight: 400;
         line-height: 1.406rem;
+        margin: 0;
     }
 
     .aboutUsVideoContainer-textContainer {
@@ -235,6 +240,64 @@
         right: 38px;
         bottom: 100px;
         border-bottom: 1px solid var(--white-color);
+    }
+
+    .aboutUsVideoContainer-linkContainer a {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.7rem;
+    }
+
+}
+
+@media (width < 800px) {
+    .homeAboutUsContainer {
+        margin-top: 116px;
+    }
+
+    .homeAboutUsContainer ul {
+        margin-left: 0;
+        width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+        box-sizing: border-box;
+    }
+
+    .homeAboutUsContainer h3 {
+        font-size: 1.75rem;
+        line-height: 1.9rem;
+    }
+
+    .homeAboutUsContainer p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .aboutUsVideoContainer {
+        margin-top: 124px;
+    }
+
+    .aboutUsVideoContainer h2 {
+        line-height: 1.688rem;
+    }
+
+    .aboutUsVideoContainer p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .aboutUsVideoContainer-linkContainer {
+        right: 18px;
+        bottom: 60px;
+    }
+
+    .aboutUsVideoContainer-textContainer {
+        left: 0;
+        bottom: 158px;
+        padding-left: 18px;
+        padding-right: 18px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
 }

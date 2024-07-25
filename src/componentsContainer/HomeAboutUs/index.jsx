@@ -22,24 +22,22 @@ const HomeAboutUs = () => {
 
     return (
         <section className="homeAboutUsContainer">
-            {width < 835 ? (
+            {width < 1026 ? (
                 <>
-                    <div>
-                        <ul>
-                            <li>
-                                <h3>Paquetes de Servicios a Medida</h3>
-                                <p>Solución integral para diseño, marketing y producción, todo en un solo lugar.</p>
-                            </li>
-                            <li>
-                                <h3>Soluciones Escalables</h3>
-                                <p>Ajusta tus servicios sin recargos ni trámites a medida que tu empresa crece.</p>
-                            </li>
-                            <li>
-                                <h3>Servicio Personalizado</h3>
-                                <p>Comunicación directa con profesionales para cumplir tus expectativas.</p>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>
+                            <h3>Paquetes de Servicios a Medida</h3>
+                            <p>Solución integral para diseño, marketing y producción, todo en un solo lugar.</p>
+                        </li>
+                        <li>
+                            <h3>Soluciones Escalables</h3>
+                            <p>Ajusta tus servicios sin recargos ni trámites a medida que tu empresa crece.</p>
+                        </li>
+                        <li>
+                            <h3>Servicio Personalizado</h3>
+                            <p>Comunicación directa con profesionales para cumplir tus expectativas.</p>
+                        </li>
+                    </ul>
                     <div className="aboutUsVideoContainer">
                         <VideoBG video={home_aboutUsVideo} />
                         <div className="aboutUsVideoContainer-textContainer">
@@ -47,7 +45,7 @@ const HomeAboutUs = () => {
                             <p>Estamos aquí para potenciar tu presencia, mejorar tu impacto y llevar tu marca al siguiente nivel. Con pasión y dedicación, convertimos tus sueños en realidad visual.</p>
                         </div>
                         <div className="aboutUsVideoContainer-linkContainer">
-                        <Link>Sobre Nosotros</Link>
+                            <Link>Sobre Nosotros</Link>
                         </div>
                     </div>
                 </>
