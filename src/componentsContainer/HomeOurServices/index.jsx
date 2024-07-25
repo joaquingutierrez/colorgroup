@@ -1,10 +1,13 @@
 import "./style.css"
-import { ItemsGallery } from "../../components"
+import { ItemsGallery, SwippeableGallery } from "../../components"
 import graficaImg from "../../assets/home/ourServices/grafica.png"
 import dis_webImg from "../../assets/home/ourServices/dis_web.png"
 import dis_graficoImg from "../../assets/home/ourServices/dis_grafico.png"
+import useWindowSize from "../../customHooks/useWindowSize"
 
 const HomeOurServices = () => {
+
+    const { width } = useWindowSize();
 
     const items = [
         {
@@ -36,7 +39,7 @@ const HomeOurServices = () => {
                 <h2>IMPULSA TU MARCA CON NUESTRAS SOLUCIONES</h2>
                 <p>Ofrecemos impresión de alta calidad utilizando materiales de primera clase. Realizamos impresiones offset, digitales, textiles, sublimación y bordados computarizados. Nos especializamos en soluciones personalizadas para satisfacer las necesidades específicas de cada cliente, asegurando resultados excepcionales y una mayor visibilidad para tu marca.</p>
             </div>
-            <ItemsGallery items={items}/>
+            {width < 1025 ? <SwippeableGallery items={items} /> : <ItemsGallery items={items}/>}
             <div className="homeOurServices-transition"></div>
         </section>
     )

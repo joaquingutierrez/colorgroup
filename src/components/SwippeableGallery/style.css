@@ -1,0 +1,86 @@
+.swippeableGalleryContainer {
+    max-width: 100%;
+    margin: auto;
+}
+
+.swippeableGalleryWindow {
+    width: 100%;
+    aspect-ratio: 834/705;
+    overflow: hidden;
+    height: 100%;
+}
+
+.swippeableGalleryWrapper {
+    display: flex;
+    transition: 1s ease-in-out;
+    height: 100%;
+}
+
+.swippeableGallery-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swippeableGallery-item h2 {
+    width: 100%;
+    position: absolute;
+    bottom: 94px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 7.5rem;
+    text-align: center;
+    color: var(--white-color);
+    margin: 0;
+}
+
+.swippeableGallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swippeableGallery-item-bannerText {
+    opacity: 0;
+    background-color: var(--light-gray);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+}
+
+.swippeableGallery-item-bannerText-animation {
+    opacity: 1;
+}
+
+.swippeableGallery-item-bannerText p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    text-align: left;
+    width: 468px;
+}
+
+.swippeableGallery-item-bannerText h3 {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.563rem;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
+
+.margin-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
