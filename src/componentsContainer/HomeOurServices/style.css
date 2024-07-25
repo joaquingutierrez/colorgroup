@@ -54,5 +54,20 @@
 }
 
 @media (width < 800px) {
+    .homeOurServices-topInfoContainer {
+        flex-direction: column;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .homeOurServices-topInfoContainer h2 {
+        font-size: 2rem;
+        line-height: 1.688rem;
+        width: 100%;
+    }
 
+    .homeOurServices-topInfoContainer p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        width: 100%;
+    }
 }

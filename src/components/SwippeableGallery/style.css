@@ -84,3 +84,29 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+@media (width < 800px) {
+    .swippeableGalleryContainer {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .swippeableGalleryWindow {
+        border-radius: 101px 15px 40px 20px;
+    }
+
+    .swippeableGallery-item h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .swippeableGallery-item-bannerText p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        width: 98%;
+    }
+
+    .swippeableGallery-item-bannerText h3 {
+        display: none;
+    }
+}
