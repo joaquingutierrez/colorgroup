@@ -10,9 +10,12 @@ import image5 from "../../assets/home/gallery/image5.png"
 import image6 from "../../assets/home/gallery/image6.png"
 import image7 from "../../assets/home/gallery/image7.png"
 import useScroll from "../../customHooks/useScroll"
+import useWindowSize from "../../customHooks/useWindowSize"
 
 
 const HomeGallery = () => {
+
+    const { width } = useWindowSize()
 
     const { isAtTop, elementRef } = useScroll()
     const [animationTransition, setAnimationTransition] = useState(false)
@@ -88,19 +91,31 @@ const HomeGallery = () => {
 
     return (
         <section className="homeGallerySectionContainer">
-            <div className={`homeGalleryBanner ${animationTransition ? "homeGalleryBanner-transition" : ""}`}>
-                <div className={`homeGalleryBanner-textContainer ${isAtTop ? "homeGalleryBanner-textContainer-transition" : ""}`}>
-                    <h2>UN ECOSISTEMA INTEGRAL DE SOLUCIONES</h2>
-                    <p>Puedes elegir cada uno de los servicios que consideres necesarios para tu estrategia, garantizando una sólida línea editorial para toda tu estrategia publicitaria, tanto en el entorno digital como en el entorno gráfico.</p>
-                    <Link to={"/services"}><span>Nuestros Servicios</span></Link>
-                </div>
+            {width < 835 ? (<>
                 <img src={imgs[4]} alt="" />
-            </div>
-            <div className="homeGalleryContainer">
-                <div ref={elementRef} className="homeGalleryWrapper">
-                    {renderGallery()}
+                <div className="homeGallerySectionContainer-infoContainer">
+                    <h2>Un ecosistema integral de soluciones</h2>
+                    <p>Puedes elegir cada uno de los servicios que consideres necesarios para tu estrategia, garantizando una sólida línea editorial para toda tu estrategia publicitaria, tanto en el entorno digital como en el entorno gráfico.</p>
                 </div>
-            </div>
+                <div className="homeGallerySectionContainer-linkContainer">
+                    <Link>Nosotros Servicios</Link>
+                </div>
+            </>) :
+                (<>
+                    <div className={`homeGalleryBanner ${animationTransition ? "homeGalleryBanner-transition" : ""}`}>
+                        <div className={`homeGalleryBanner-textContainer ${isAtTop ? "homeGalleryBanner-textContainer-transition" : ""}`}>
+                            <h2>UN ECOSISTEMA INTEGRAL DE SOLUCIONES</h2>
+                            <p>Puedes elegir cada uno de los servicios que consideres necesarios para tu estrategia, garantizando una sólida línea editorial para toda tu estrategia publicitaria, tanto en el entorno digital como en el entorno gráfico.</p>
+                            <Link to={"/services"}><span>Nuestros Servicios</span></Link>
+                        </div>
+                        <img src={imgs[4]} alt="" />
+                    </div>
+                    <div className="homeGalleryContainer">
+                        <div ref={elementRef} className="homeGalleryWrapper">
+                            {renderGallery()}
+                        </div>
+                    </div>
+                </>)}
         </section>
     )
 }
