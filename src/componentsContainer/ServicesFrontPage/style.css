@@ -60,3 +60,83 @@
     margin-top: 40px;
     float: right;
 }
+
+@media (799px < width < 1025px) {
+    .servicesFrontPage-title {
+        font-size: 4.688rem;
+        line-height: 4.609rem;
+    }
+
+    .servicesFrontPage-title1 {
+        left: 9.60%;
+        top: 26.98%;
+    }
+
+    .servicesFrontPage-title2 {
+        left: auto;
+        top: 57.70%;
+        right: 9.60%;
+    }
+
+    .servicesFrontPage-title2::after {
+        bottom: 1.5rem;
+    }
+
+    .servicesFrontPage-quoteContainer {
+        left: auto;
+        right: 9.60%;
+        top: 81.58%;
+        width: 433px;
+    }
+
+    .servicesFrontPage-quote1 {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+    }
+
+    .servicesFrontPage-quote2 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-top: 16px;
+    }
+}
+
+@media (width < 800px) {
+    .servicesFrontPage-title {
+        font-size: 3.125rem;
+        line-height: 3.073rem;
+    }
+
+    .servicesFrontPage-title1 {
+        left: 5.64%;
+        top: 36.07%;
+    }
+
+    .servicesFrontPage-title2 {
+        left: auto;
+        top: 48.88%;
+        right: 5.64%;
+    }
+
+    .servicesFrontPage-title2::after {
+        bottom: 0.9rem;
+    }
+
+    .servicesFrontPage-quoteContainer {
+        left: auto;
+        right: 4.61%;
+        top: 73.44%;
+        width: 258px;
+    }
+
+    .servicesFrontPage-quote1 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .servicesFrontPage-quote2 {
+        font-size: 0.875rem;
+        line-height: 1.094rem;
+        margin-top: 16px;
+    }
+}
