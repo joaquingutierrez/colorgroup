@@ -1,8 +1,11 @@
 import "./style.css"
 import { Enhance, ServiceInfo, ServicesFrontPage, StripeSection, WhyColorGroup } from "../../componentsContainer"
 import useScroll from "../../customHooks/useScroll"
+import useWindowSize from "../../customHooks/useWindowSize"
 
 const Services = () => {
+
+    const { width } = useWindowSize()
 
     const { isAtTop: isAtTopMaker1, elementRef: marker1Ref } = useScroll()
     const { isAtTop: isAtTopMaker2, elementRef: marker2Ref } = useScroll()
@@ -51,18 +54,25 @@ const Services = () => {
     return (
         <main>
             <ServicesFrontPage />
-            <StripeSection />
-            <div className="services-infoAndWhyContainer">
-                <div className={`services-infoAndWhyWrapper services-infoAndWhyWrapper-z1 ${isAtTopMaker1 ? "services-info-translate" : ""}`}>
-                    <ServiceInfo title={marketing.title} items={marketing.items} />
+            {width < 1025 ? <>
+                <h2 className="servicesPage-section-title">Somos un grupo empresarial que ofrece soluciones integrales en comunicación visual, marketing y análisis financiero.</h2>
+                <ServiceInfo title={marketing.title} items={marketing.items} />
+                <ServiceInfo title={publicity.title} items={publicity.items} />
+                <WhyColorGroup />
+            </> : <>
+                <StripeSection />
+                <div className="services-infoAndWhyContainer">
+                    <div className={`services-infoAndWhyWrapper services-infoAndWhyWrapper-z1 ${isAtTopMaker1 ? "services-info-translate" : ""}`}>
+                        <ServiceInfo title={marketing.title} items={marketing.items} />
+                    </div>
+                    <div ref={marker1Ref} className={`services-infoAndWhyWrapper services-infoAndWhyWrapper-z2 ${isAtTopMaker2 ? "services-info-translate" : ""}`}>
+                        <ServiceInfo title={publicity.title} items={publicity.items} />
+                    </div>
+                    <div ref={marker2Ref} className="services-infoAndWhyWrapper2">
+                        <WhyColorGroup />
+                    </div>
                 </div>
-                <div ref={marker1Ref} className={`services-infoAndWhyWrapper services-infoAndWhyWrapper-z2 ${isAtTopMaker2 ? "services-info-translate" : ""}`}>
-                    <ServiceInfo title={publicity.title} items={publicity.items} />
-                </div>
-                <div ref={marker2Ref} className="services-infoAndWhyWrapper2">
-                    <WhyColorGroup />
-                </div>
-            </div>
+            </>}
             <Enhance />
         </main>
     )
