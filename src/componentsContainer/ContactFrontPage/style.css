@@ -55,3 +55,61 @@
     left: 80px;
     top: 81.55%;
 }
+
+@media (799px < width < 1025px) {
+    .contactFrontPage-title1 {
+        top: 26.43%;
+    }
+
+    .contactFrontPage-title2 {
+        left: 45.56%;
+        top: 57.15%;
+    }
+
+    .contactFrontPage-p {
+        left: 44px;
+        top: 86.78%;
+    }
+
+    .contactFrontPageContainer h2 {
+        font-size: 4.688rem;
+        letter-spacing: -1px;
+    }
+
+    .contactFrontPageContainer p {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+        width: 365px;
+    }
+}
+
+@media (width < 800px) {
+    .contactFrontPage-title1 {
+        left: 22px;
+        top: 34.57%;
+    }
+
+    .contactFrontPage-title2 {
+        left: 22.05%;
+        top: 47.65%;
+    }
+
+    .contactFrontPage-p {
+        left: 20px;
+        top: 85.11%;
+    }
+
+    .contactFrontPageContainer h2 {
+        font-size: 3.125rem;
+        letter-spacing: -1px;
+    }
+
+    .contactFrontPageContainer p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        width: 365px;
+    }
+    .contactFrontPage-title2::after {
+        bottom: 2.1rem;
+    }
+}
