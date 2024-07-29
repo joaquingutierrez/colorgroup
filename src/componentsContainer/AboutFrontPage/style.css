@@ -21,7 +21,7 @@
 }
 
 .aboutFrontPage-title2 {
-    left: 50%;
+    right: 23.49%;
     top: 55.95%;
 }
 
@@ -37,7 +37,7 @@
 
 .aboutFrontPage-quoteContainer {
     position: absolute;
-    left: 50.69%;
+    right: 22.29%;
     top: 82.81%;
     width: 34.89%;
 }
@@ -60,4 +60,73 @@
     color: var(--white-color);
     margin-top: 40px;
     float: right;
+}
+
+@media (799px < width < 1025px) {
+    .aboutFrontPage-title1 {
+        left: 80px;
+        top: 26.98%;
+    }
+
+    .aboutFrontPage-title2 {
+        right: 60px;
+        top: 57.70%;
+    }
+
+    .aboutFrontPage-quoteContainer {
+        right: 60px;
+        top: 81.58%;
+        width: 50%;
+    }
+
+    .aboutFrontPage-title {
+        font-size: 4.688rem;
+        line-height: 4.609rem;
+    }
+
+    .aboutFrontPage-quote1 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        text-align: justify;
+    }
+
+    .aboutFrontPage-quote2 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-top: 16px;
+    }
+}
+
+@media (width < 800px) {
+    .aboutFrontPage-title1 {
+        left: 22px;
+        top: 36.07%;
+    }
+
+    .aboutFrontPage-title2 {
+        right: 22px;
+        top: 48.88%;
+    }
+    .aboutFrontPage-quoteContainer {
+        right: 18px;
+        top: 73.44%;
+        width: 60%;
+    }
+    .aboutFrontPage-title {
+        font-size: 3.125rem;
+        line-height: 3.073rem;
+    }
+    .aboutFrontPage-quote1 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        text-align: justify;
+    }
+    .aboutFrontPage-quote2 {
+        font-size: 0.875rem;
+        line-height: 1.094rem;
+        margin-top: 40px;
+    }
+    .aboutFrontPage-title2::after {
+        bottom: 1rem;
+    }
 }
