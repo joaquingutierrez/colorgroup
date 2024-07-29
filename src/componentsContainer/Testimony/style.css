@@ -53,3 +53,46 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     z-index: -1;
 }
+
+@media (799px < width < 1025px) {
+    .testimonyContainer {
+        margin-top: 100px;
+        height: 807px;
+    }
+
+    .testimony-infoContainer {
+        width: 42.44%;
+    }
+
+    .testimony-text-quote {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+        margin-top: 20px;
+    }
+    .testimony-text-quote2 {
+        margin-bottom: 48.5px;
+    }
+}
+
+@media (width < 800px) {
+    .testimonyContainer {
+        margin-top: 100px;
+        height: 538px;
+        padding-left: 18px;
+        padding-right: 18px;
+        box-sizing: border-box;
+    }
+    .testimony-infoContainer {
+        width: 100%;
+    }
+    .testimony-text-quote {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-top: 20px;
+    }
+    .testimony-text-quote2 {
+        font-size: 0.875rem;
+        line-height: 1.094rem;
+        margin-bottom: 9px;
+    }
+}
