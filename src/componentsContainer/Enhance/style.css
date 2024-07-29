@@ -66,6 +66,10 @@
         line-height: 1.406rem;
         width: 100%;
         padding: 10px;
+        box-sizing: border-box;
+    }
+    .enchanceContainer-customButton:hover {
+        cursor: pointer;
     }
 }
 
@@ -105,12 +109,14 @@
         text-align: center;
         background-color: var(--text-color);
         color: var(--white-color);
-        font-size: 1rem;
+        font-size: 1.125rem;
         font-weight: 400;
-        line-height: 1.25rem;
-        width: 70%;
+        line-height: 1.406rem;
+        width: 100%;
         padding: 10px;
-        margin: auto;
-        display: block;
+        box-sizing: border-box;
+    }
+    .enchanceContainer-customButton:hover {
+        cursor: pointer;
     }
 }

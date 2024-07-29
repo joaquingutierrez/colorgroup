@@ -49,3 +49,35 @@
     text-align: end;
     margin-top: 44px;
 }
+
+@media (799px < width < 1025px) {
+    .form-firtsLastName {
+        flex-direction: column;
+        gap: 0;
+    }
+    .formContainer label {
+        font-size:1.125rem;
+        line-height: 1.406rem;
+    }
+    .form-buttonContainer {
+        width: 100%;
+        margin-top: 0;
+    }
+    .formContainer textarea {
+        margin-bottom: 40px;
+    }
+}
+
+@media (width < 800px) {
+    .formContainer {
+        width: 100%;
+    }
+    .form-firtsLastName {
+        flex-direction: column;
+        gap: 0;
+    }
+    .formContainer label {
+        font-size:1rem;
+        line-height: 1.25rem;
+    }
+}

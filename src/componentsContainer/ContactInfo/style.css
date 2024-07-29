@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+
 .contactInfo-data ul {
     padding: 0;
     margin: 0;
@@ -36,4 +37,64 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 50px;
+}
+
+.contact-infoContent {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.563rem;
+}
+
+@media (799px < width < 1025px) {
+    .contactInfoContainer {
+        margin-top: 120px;
+        margin-left: 142px;
+        margin-right: 142px;
+        margin-bottom: 95px;
+        flex-direction: column-reverse;
+        gap: 95px;
+    }
+    .contact-infoContent {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+    }
+    .contactInfo-days {
+        margin-top: 60px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .contactInfo-days h3 {
+        margin: 0;
+        margin-bottom: 11px;
+    }
+    .contactInfo-days p {
+        margin: 0;
+    }
+}
+
+@media (width < 800px) {
+    .contactInfoContainer {
+        margin-top: 60px;
+        margin-left: 18px;
+        margin-right: 18px;
+        margin-bottom: 60px;
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+    .contact-infoContent {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .contactInfo-days {
+        margin-top: 64px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .contactInfo-days h3 {
+        margin: 0;
+        margin-bottom: 11px;
+    }
+    .contactInfo-days p {
+        margin: 0;
+    }
 }

@@ -1,7 +1,10 @@
 import "./style.css"
 import Button from "../Button"
+import useWindowSize from "../../customHooks/useWindowSize"
 
 const Form = () => {
+
+    const { width } = useWindowSize()
 
     return (
         <form className="formContainer">
@@ -24,7 +27,11 @@ const Form = () => {
                 <textarea name="message" id="message"></textarea>
             </div>
             <div className="form-buttonContainer">
-            <Button title="Enviar" isSubmit={true} />
+                {width < 1025 ?
+                    <button className="enchanceContainer-customButton">Enviar</button>
+                    :
+                    <Button title="Enviar" isSubmit={true} />
+                }
             </div>
         </form>
     )
