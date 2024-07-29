@@ -4,9 +4,11 @@ import "./style.css"
 import { LangButton, NavBar } from "../../components"
 import colorGroup_logo from "../../assets/colorGroup_logo.png"
 import { Link } from "react-router-dom"
+import { useLanguage } from "../../context/languageContext"
 
 const Header = ({ links }) => {
 
+    const { language, changeLanguage } = useLanguage()
     const [enterUtils, setEnterUtils] = useState(false)
 
 
@@ -22,8 +24,8 @@ const Header = ({ links }) => {
                 <div className="header-mobileButton-line header-mobileButton-bottomLine"></div>
             </div>
             <div className={`headerContainer-utilsContainer ${enterUtils ? "headerContainer-utilsContainer-enter" : ""}`}>
-                <LangButton />
-                <NavBar links={links} />
+                <LangButton handleChange={changeLanguage} />
+                <NavBar links={links[language]} />
             </div>
         </header>
     )

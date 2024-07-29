@@ -4,8 +4,11 @@ import "./style.css"
 import linkeinLogo from "../../assets/logos/linkedin_logo.png"
 import facebookLogo from "../../assets/logos/facebook_logo.png"
 import instagramLogo from "../../assets/logos/instagram_logo.png"
+import { useLanguage } from "../../context/languageContext"
 
 const Footer = ({ links }) => {
+
+    const { language } = useLanguage()
 
     const scrollingMarquee = (str) => {
         return (
@@ -27,7 +30,7 @@ const Footer = ({ links }) => {
                 <div className="footer-linksContainer">
                     <ul>
                         <li className="navLink-line-animation"><Link to="/">INICIO</Link></li>
-                        {links.map((item, index) => {
+                        {links[language].map((item, index) => {
                             return (
                                 <li className="navLink-line-animation" key={index}><Link to={item.path}>{item.title}</Link></li>
                             )
