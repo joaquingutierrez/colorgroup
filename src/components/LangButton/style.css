@@ -90,7 +90,25 @@
 }
 
 @media (width < 1025px) {
-    .dropDown {
-        display: none;
+    .dropDown-button {
+        color: var(--white-color);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .dropDown-button::after {
+        background-color: var(--white-color);
+    }
+
+    .dropDown-button::before {
+        background-color: var(--white-color);
+    }
+
+    .dropDown-hiddenContent {
+        background-color: var(--text-color);
+    }
+
+    .dropDown-hiddenContent li {
+        color: var(--white-color);
     }
 }

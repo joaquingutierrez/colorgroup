@@ -73,3 +73,13 @@
     transform: scaleX(1);
     transform-origin: left;
 }
+
+@media (width < 1025px) {
+    .navbarContainer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbarContainer ul li {
+        padding: 10px;
+    }
+}
