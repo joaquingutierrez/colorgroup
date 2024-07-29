@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .whyColorGroupContainer img {
@@ -71,4 +70,97 @@
     background-color: #fff;
     position: absolute;
     right: 120px;
+}
+
+@media (799px < width < 1025px) {
+    .whyColorGroup-verticalLine {
+        display: none;
+    }
+
+    .whyColorGroupContainer {
+        justify-content: flex-start;
+    }
+
+    .whyColor-contentContainer {
+        margin-left: 35.61%;
+        border-left: 1px solid var(--light-gray2);
+        padding-left: 100px;
+        width: 333px;
+    }
+
+    .whyColorGroupContainer h2 {
+        font-size: 2.25rem;
+        line-height: 2rem;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .whyColorGroupContainer ol {
+        width: 100%;
+    }
+
+    .whyColorGroupContainer h3 {
+        line-height: 2.172rem;
+        margin-top: 0px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .whyColorGroupContainer p {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+        margin-top: 0px;
+        margin-bottom: 39px;
+    }
+
+    .whyColorGroupContainer ol li::before {
+        left: -30px;
+        font-size: 0.875rem;
+        line-height: 2.5rem;
+    }
+
+}
+
+@media (width < 800px) {
+    .whyColorGroup-verticalLine {
+        display: none;
+    }
+    .whyColor-contentContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .whyColorGroupContainer h2 {
+        font-size: 2rem;
+        line-height: 1.688rem;
+        margin-bottom: 69px;
+        width: 100%;
+        padding-left: 27px;
+        box-sizing: border-box;
+    }
+    .whyColorGroupContainer ol {
+        width: 100%;
+        padding-left: 27px;
+        box-sizing: border-box;
+    }
+    .whyColorGroupContainer h3 {
+        font-size: 1.75rem;
+        line-height: 2.188rem;
+        margin-top: 0px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .whyColorGroupContainer p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-top: 0px;
+        margin-bottom: 33px;
+    }
+    .whyColorGroupContainer ol li::before {
+        left: -25px;
+        font-size: 0.875rem;
+        line-height: 2.9rem;
+    }
 }
