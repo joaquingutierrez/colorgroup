@@ -1,8 +1,8 @@
 import { useState } from "react"
 import "./style.css"
 
-const DropDown = ({ handleChange }) => {
-    const [language, setLanguage] = useState("Español")
+const DropDown = ({ handleChange, title }) => {
+
     const [showDropDown, setShowDropDown] = useState(false)
 
     const toggleDropdown = () => {
@@ -12,19 +12,15 @@ const DropDown = ({ handleChange }) => {
     const handleClick = (lan) => {
         switch (lan) {
             case "ESP":
-                setLanguage("Español")
                 handleChange("spanish")
                 break
             case "ENG":
-                setLanguage("English")
                 handleChange("english")
                 break
             case "ITA":
-                setLanguage("Italiano")
                 handleChange("italian")
                 break
             default:
-                setLanguage("Español")
                 handleChange("spanish")
         }
         setShowDropDown(false)
@@ -33,7 +29,7 @@ const DropDown = ({ handleChange }) => {
     return (
         <div className="dropDown">
             <button onClick={toggleDropdown} className="dropDown-button">
-                {language}
+                {title.charAt(0).toUpperCase() + title.slice(1)}
             </button>
             {(
                 <div className={`dropDown-hiddenContent ${showDropDown ? "dropDown-showContent" : ""}`}>

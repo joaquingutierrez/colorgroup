@@ -24,7 +24,7 @@ const Header = ({ links }) => {
                 <div className="header-mobileButton-line header-mobileButton-bottomLine"></div>
             </div>
             <div className={`headerContainer-utilsContainer ${enterUtils ? "headerContainer-utilsContainer-enter" : ""}`}>
-                <LangButton handleChange={changeLanguage} />
+                <LangButton title={language} handleChange={changeLanguage} />
                 <NavBar links={links[language]} />
             </div>
         </header>
