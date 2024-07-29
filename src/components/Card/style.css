@@ -2,7 +2,7 @@
     flex: 0 0 33.3333%;
 }
 
-.card-img{
+.card-img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -40,4 +40,69 @@
 .card-lnLogo {
     width: 18px;
     margin-top: 24px;
+}
+
+@media (799px < width < 1025px) {
+    .cardContainer {
+        flex: 0 0 50%;
+    }
+
+    .card-img {
+        width: 66px;
+        height: 66px;
+    }
+
+    .cardContainer h3 {
+        line-height: 2.172rem;
+        margin-top: 3px;
+    }
+
+    .cardContainer p {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+        margin-top: 10px;
+    }
+
+    .card-lnLogo {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+    }
+}
+
+@media (width < 800px) {
+    .cardContainer {
+        flex: 0 0 80%;
+    }
+
+    .card-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .cardContainer h3 {
+        font-size: 1.75rem;
+        line-height: 2.188rem;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .cardContainer h4 {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+        margin-bottom: 7px;
+    }
+
+    .cardContainer p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .card-lnLogo {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+    }
 }

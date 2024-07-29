@@ -3,6 +3,7 @@
     overflow: hidden;
     margin-top: 100px;
 }
+
 .cardCarouselContainer {
     display: flex;
     align-items: flex-start;
@@ -22,6 +23,7 @@
     align-items: flex-end;
     gap: 8px;
 }
+
 .cardCarousel-level {
     width: 8px;
     height: 8px;
@@ -56,7 +58,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: var(--text-color);
     width: 60%;
     height: 3px;
@@ -74,6 +76,7 @@
     transform-origin: left bottom;
     border-radius: 20px;
 }
+
 .cardCarousel-buttons-leftButton-diagonalBottom {
     background-color: var(--text-color);
     width: 60%;
@@ -97,6 +100,7 @@
     transform-origin: right bottom;
     border-radius: 20px;
 }
+
 .cardCarousel-buttons-rightButton-diagonalBottom {
     background-color: var(--text-color);
     width: 60%;
@@ -107,4 +111,33 @@
     transform: rotateZ(-45deg);
     transform-origin: right top;
     border-radius: 20px;
+}
+
+@media (799px < width < 1025px) {
+    .cardCarouselContainer-outer {
+        margin-top: 60px;
+    }
+
+    .cardCarousel-utils {
+        margin-top: 60px;
+    }
+
+    .cardCarousel-buttons {
+        display: none;
+    }
+}
+
+@media (width < 800px) {
+    .cardCarouselContainer-outer {
+        margin-top: 60px;
+    }
+
+    .cardCarousel-utils {
+        margin-top: 36px;
+        justify-content: center;
+    }
+
+    .cardCarousel-buttons {
+        display: none;
+    }
 }

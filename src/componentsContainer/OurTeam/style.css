@@ -3,3 +3,35 @@
     margin-left: 80px;
     margin-right: 80px;
 }
+
+.ourTeamContainer h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+@media (799px < width < 1025px) {
+    .ourTeamContainer {
+        margin-top: 100px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .ourTeamContainer h2 {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+    }
+}
+
+@media (width < 800px) {
+    .ourTeamContainer {
+        margin-top: 100px;
+        margin-left: 8px;
+        margin-right: 0;
+    }
+
+    .ourTeamContainer h2 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
