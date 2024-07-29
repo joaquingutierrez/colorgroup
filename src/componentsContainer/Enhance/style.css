@@ -23,3 +23,94 @@
     margin: 0;
     margin-bottom: 60px;
 }
+
+@media (799px < width < 1025px) {
+    .enhanceContainer {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enhance-textContainer {
+        width: 472px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .enhanceContainer h2 {
+        font-size: 2.25rem;
+        line-height: 2rem;
+        margin: auto;
+        margin-bottom: 16px;
+        text-align: center;
+        width: 357px;
+    }
+
+    .enhanceContainer p {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+        margin: auto;
+        margin-bottom: 75px;
+        text-align: center;
+        width: 220px;
+    }
+
+    .enchanceContainer-customButton {
+        all: unset;
+        text-align: center;
+        background-color: var(--text-color);
+        color: var(--white-color);
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.406rem;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (width < 800px) {
+    .enhanceContainer {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .enhance-textContainer {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+    .enhanceContainer h2 {
+        font-size: 2rem;
+        line-height: 1.688rem;
+        margin: auto;
+        margin-bottom: 31px;
+        text-align: center;
+        width: 70%;
+    }
+    .enhanceContainer p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin: auto;
+        margin-bottom: 60px;
+        text-align: center;
+        width: 200px;
+    }
+    .enchanceContainer-customButton {
+        all: unset;
+        text-align: center;
+        background-color: var(--text-color);
+        color: var(--white-color);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        width: 70%;
+        padding: 10px;
+        margin: auto;
+        display: block;
+    }
+}
