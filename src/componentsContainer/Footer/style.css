@@ -4,6 +4,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .footer-topContainer {
     display: flex;
     justify-content: space-between;
@@ -12,6 +13,7 @@
     padding-left: 80px;
     padding-right: 80px;
 }
+
 .footer-smContainer {
     display: flex;
     flex-direction: column;
@@ -20,12 +22,15 @@
     gap: 18px;
     width: fit-content;
 }
+
 .footer-smContainer img {
     width: 24px;
 }
+
 .footer-linksContainer {
     width: max-content;
 }
+
 .footer-linksContainer ul {
     list-style: none;
     padding: 0;
@@ -36,25 +41,37 @@
     gap: 8px;
     flex-direction: column;
 }
+
+.footer-linksContainer ul li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
 .footer-contactUs {
     margin-top: 77px;
 }
+
 .scrollingMarquee {
     display: inline-block;
     white-space: nowrap;
     animation: marquee 30s linear infinite;
 }
+
 .footer-contactUs h2 {
     margin: 0;
     margin-right: 6%;
     padding: 0;
     font-size: 18.75rem;
     line-height: 18.75rem;
-    color: transparent; /* Hace el texto transparente */
-    -webkit-text-stroke: 4px var(--text-color); /* Agrega un borde al texto */
+    color: transparent;
+    /* Hace el texto transparente */
+    -webkit-text-stroke: 4px var(--text-color);
+    /* Agrega un borde al texto */
     font-weight: 700;
     display: inline-block;
 }
+
 .footer-copyright {
     position: absolute;
     bottom: 0;
@@ -66,7 +83,44 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-56%);
+    }
+}
+
+@media (799px < width < 1025px) {
+    .footer-topContainer {
+        padding-top: 28px;
+        padding-left: 30px;
+        padding-right: 45px;
+    }
+    .footer-linksContainer ul {
+        gap: 10px;
+    }
+    .footer-linksContainer ul li {
+        font-size: 1.125rem;
+        line-height: 1.406rem;
+    }
+    .footer-smContainer {
+        gap: 20px;
+    }
+}
+
+@media (width < 800px) {
+    .footer-topContainer {
+        padding-top: 29px;
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+    .footer-linksContainer ul {
+        gap: 24px;
+    }
+    .footer-linksContainer ul li {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .footer-smContainer {
+        gap: 25px;
     }
 }

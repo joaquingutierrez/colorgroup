@@ -3,7 +3,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 770px;
+    width: 100%;
 }
 
 .form-labelInputContainer {
