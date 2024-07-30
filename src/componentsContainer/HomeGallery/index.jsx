@@ -11,9 +11,12 @@ import image6 from "../../assets/home/gallery/image6.png"
 import image7 from "../../assets/home/gallery/image7.png"
 import useScroll from "../../customHooks/useScroll"
 import useWindowSize from "../../customHooks/useWindowSize"
+import { useLanguage } from "../../context/languageContext"
 
 
 const HomeGallery = () => {
+
+    const { language } = useLanguage()
 
     const { width } = useWindowSize()
 
@@ -60,6 +63,24 @@ const HomeGallery = () => {
         image7
     ]
 
+    const translations = {
+        spanish: {
+            title: "Un ecosistema integral de soluciones",
+            desc: "Puedes elegir cada uno de los servicios que consideres necesarios para tu estrategia, garantizando una sólida línea editorial para toda tu estrategia publicitaria, tanto en el entorno digital como en el entorno gráfico.",
+            buttonTitle: "Nosotros Servicios"
+        },
+        english: {
+            title: "AN INTEGRAL ECOSYSTEM OF SOLUTIONS",
+            desc: "You can choose each of the services that you consider necessary for your strategy, guaranteeing a solid editorial line for your entire advertising strategy, both in the digital environment and in the graphic environment.",
+            buttonTitle: "Our Services"
+        },
+        italian: {
+            title: "UN ECOSISTEMA COMPLETO DI SOLUZIONI",
+            desc: "Puoi scegliere ciascuno dei servizi che ritieni necessari per la tua strategia, garantendoti una solida linea editoriale per tutta la tua strategia pubblicitaria, sia in ambiente digitale che in ambiente grafico.",
+            buttonTitle: "I nostri servizi"
+        }
+    }
+
 
     const renderGallery = () => {
         return imgs.map((img, index) => {
@@ -94,19 +115,19 @@ const HomeGallery = () => {
             {width < 1026 ? (<>
                 <img src={imgs[4]} alt="" />
                 <div className="homeGallerySectionContainer-infoContainer">
-                    <h2>Un ecosistema integral de soluciones</h2>
-                    <p>Puedes elegir cada uno de los servicios que consideres necesarios para tu estrategia, garantizando una sólida línea editorial para toda tu estrategia publicitaria, tanto en el entorno digital como en el entorno gráfico.</p>
+                    <h2>{translations[language].title}</h2>
+                    <p>{translations[language].desc}</p>
                 </div>
                 <div className="homeGallerySectionContainer-linkContainer">
-                    <Link>Nosotros Servicios</Link>
+                    <Link>{translations[language].buttonTitle}</Link>
                 </div>
             </>) :
                 (<>
                     <div className={`homeGalleryBanner ${animationTransition ? "homeGalleryBanner-transition" : ""}`}>
                         <div className={`homeGalleryBanner-textContainer ${isAtTop ? "homeGalleryBanner-textContainer-transition" : ""}`}>
-                            <h2>UN ECOSISTEMA INTEGRAL DE SOLUCIONES</h2>
-                            <p>Puedes elegir cada uno de los servicios que consideres necesarios para tu estrategia, garantizando una sólida línea editorial para toda tu estrategia publicitaria, tanto en el entorno digital como en el entorno gráfico.</p>
-                            <Link to={"/services"}><span>Nuestros Servicios</span></Link>
+                            <h2>{translations[language].title}</h2>
+                            <p>{translations[language].desc}</p>
+                            <Link to={"/services"}><span>{translations[language].buttonTitle}</span></Link>
                         </div>
                         <img src={imgs[4]} alt="" />
                     </div>

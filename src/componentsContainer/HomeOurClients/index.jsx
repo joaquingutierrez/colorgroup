@@ -10,9 +10,12 @@ import seaburyImg from "../../assets/home/ourClients/seabury.png"
 import ucatolicadcordobaImg from "../../assets/home/ourClients/ucatolicadcordoba.png"
 import useIntersectionObserver from "../../customHooks/useIntersectionObserver"
 import useWindowSize from "../../customHooks/useWindowSize"
+import { useLanguage } from "../../context/languageContext"
 
 
 const HomeOurClients = () => {
+
+    const { language } = useLanguage()
 
     const { width } = useWindowSize()
     const clientsRef = useRef(null)
@@ -28,9 +31,21 @@ const HomeOurClients = () => {
         ucatolicadcordobaImg
     ]
 
+    const translations = {
+        spanish: {
+            title: "Nuestros Clientes"
+        },
+        english: {
+            title: "Our Clients"
+        },
+        italian: {
+            title: "I nostri clienti"
+        }
+    }
+
     return (
         <section ref={clientsRef} className="homeOurClientesContainer">
-            <h2>Nuestros Clientes</h2>
+            <h2>{translations[language].title}</h2>
             {width < 1026 ? (<>
                 <div className="homeOurClients-imgsContainer">
                     <div className="homeOurClients-imgContainer"><img src={altragraciaImg} alt="" /></div>
