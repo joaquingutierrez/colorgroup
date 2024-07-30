@@ -4,6 +4,7 @@
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
+    max-width: 780px;
 }
 
 .form-labelInputContainer {
