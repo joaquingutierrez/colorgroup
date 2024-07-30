@@ -19,6 +19,24 @@ const Footer = ({ links }) => {
         )
     }
 
+    const translations = {
+        spanish: {
+            home: "Inicio",
+            contact: "Contacto",
+            marquee: "HÁBLENOS"
+        },
+        english: {
+            home: "Home",
+            contact: "Contact",
+            marquee: "TALK TO US"
+        },
+        italian: {
+            home: "Inizio",
+            contact: "Contatto",
+            marquee: "PARLA CON NOI"
+        }
+    }
+
     return (
         <footer className="footerContainer">
             <div className="footer-topContainer">
@@ -29,17 +47,18 @@ const Footer = ({ links }) => {
                 </div>
                 <div className="footer-linksContainer">
                     <ul>
-                        <li className="navLink-line-animation"><Link to="/">INICIO</Link></li>
-                        {links[language].map((item, index) => {
-                            return (
-                                <li className="navLink-line-animation" key={index}><Link to={item.path}>{item.title}</Link></li>
-                            )
-                        })}
+                        <li className="navLink-line-animation"><Link to="/">{translations[language].home}</Link></li>
+                        {([...links[language]].splice(-1, 1), [...links[language]].slice(0, -1)).map((item, index) => (
+                            <li className="navLink-line-animation" key={index}>
+                                <Link to={item.path}>{item.title}</Link>
+                            </li>
+                        ))}
+                        <li className="navLink-line-animation"><Link to={"/contact"}>{translations[language].contact}</Link></li>
                     </ul>
                 </div>
             </div>
             <div className="footer-contactUs">
-                {scrollingMarquee("HÁBLENOS")}
+                {scrollingMarquee(translations[language].marquee)}
             </div>
             <div className="footer-copyright">
                 <p>All rights reserved 2024 © Colorcopygroup</p>
