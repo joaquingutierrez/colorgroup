@@ -2,13 +2,12 @@ import { useEffect, useState } from "react"
 
 import "./style.css"
 import VideoBG from "../../components/VideoBG"
-import home_frontPageVideo from "../../assets/home/home_frontPageVideo.mp4"
 import DiamondLogo from "../../components/DiamondLogo"
 import useScroll from "../../customHooks/useScroll"
 import useIntersectionObserver from "../../customHooks/useIntersectionObserver"
 import { useLanguage } from "../../context/languageContext"
 
-const HomeFrontPage = () => {
+const HomeFrontPage = ({video}) => {
 
     const { language } = useLanguage()
 
@@ -55,7 +54,7 @@ const HomeFrontPage = () => {
                         <h2>{translations[language].title1}</h2>
                     </div>
                     <div className={`homeFrontPage-videoContainer ${animationStart ? "" : "homeFrontPage-videoContainer-startPosition"} ${isAtTopMarker1 ? "homeFrontPage-videoContainer-setBigger" : ""} ${isScrollContainerVisible ? "" : "homeFrontPage-videoContainer-filter"}`}>
-                        <VideoBG video={home_frontPageVideo} />
+                        <VideoBG video={video} />
                     </div>
                     <div className="homeFrontPage-videoTextContainer">
                         <ul className={`homeFrontPage-listContainer ${animationStart ? "" : "homeFrontPage-listContainer-startPosition"}`}>

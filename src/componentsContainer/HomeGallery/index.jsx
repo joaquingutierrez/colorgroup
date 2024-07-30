@@ -2,19 +2,12 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 import "./style.css"
-import image1 from "../../assets/home/gallery/image1.png"
-import image2 from "../../assets/home/gallery/image2.png"
-import image3 from "../../assets/home/gallery/image3.png"
-import image4 from "../../assets/home/gallery/image4.png"
-import image5 from "../../assets/home/gallery/image5.png"
-import image6 from "../../assets/home/gallery/image6.png"
-import image7 from "../../assets/home/gallery/image7.png"
 import useScroll from "../../customHooks/useScroll"
 import useWindowSize from "../../customHooks/useWindowSize"
 import { useLanguage } from "../../context/languageContext"
 
 
-const HomeGallery = () => {
+const HomeGallery = ({imgs}) => {
 
     const { language } = useLanguage()
 
@@ -52,16 +45,6 @@ const HomeGallery = () => {
             document.body.style.overflow = ''; // Restaurar el overflow original
         };
     }, [isAtTop, elementRef]);
-
-    const imgs = [
-        image1,
-        image2,
-        image3,
-        image4,
-        image6,
-        image5,
-        image7
-    ]
 
     const translations = {
         spanish: {
