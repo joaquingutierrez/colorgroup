@@ -9,6 +9,10 @@ const Home = () => {
     const [isFinishLoading, setIsFinishLoading] = useState(true) /* Cambiar a false cuando termine la pagina*/
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
             setTimeout(() => {

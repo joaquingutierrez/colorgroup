@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+
 import "./style.css"
 import { Enhance, ServiceInfo, ServicesFrontPage, StripeSection, WhyColorGroup } from "../../componentsContainer"
 import useScroll from "../../customHooks/useScroll"
@@ -12,6 +14,10 @@ const Services = () => {
 
     const { isAtTop: isAtTopMaker1, elementRef: marker1Ref } = useScroll()
     const { isAtTop: isAtTopMaker2, elementRef: marker2Ref } = useScroll()
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const translations = {
         spanish: {
