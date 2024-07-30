@@ -18,63 +18,63 @@ const OurTeam = () => {
                     name: "Juan Manuel Iazzetta",
                     rol: "CEO",
                     desc: "Control general de la empresa",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Engargado del departamento de finanzas",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "Encargado de la implementación operaciones",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 },
                 {
                     img: iazzettaImg,
                     name: "Juan Manuel Iazzetta",
                     rol: "CEO",
                     desc: "Control general de la empresa",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Engargado del departamento de finanzas",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "Encargado de la implementación operaciones",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 },
                 {
                     img: iazzettaImg,
                     name: "Juan Manuel Iazzetta",
                     rol: "CEO",
                     desc: "Control general de la empresa",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Engargado del departamento de finanzas",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "Encargado de la implementación operaciones",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 }
             ]
         },
@@ -86,63 +86,63 @@ const OurTeam = () => {
                     name: "Juan Manuel Lazzetta",
                     rol: "CEO",
                     desc: "General control of the company",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Head of the finance department",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "In charge of operations implementation",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 },
                 {
                     img: iazzettaImg,
                     name: "Juan Manuel Lazzetta",
                     rol: "CEO",
                     desc: "General control of the company",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Head of the finance department",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "In charge of operations implementation",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 },
                 {
                     img: iazzettaImg,
                     name: "Juan Manuel Lazzetta",
                     rol: "CEO",
                     desc: "General control of the company",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Head of the finance department",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "In charge of operations implementation",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 }
             ]
         },
@@ -154,63 +154,63 @@ const OurTeam = () => {
                     name: "Juan Manuel Lazzetta",
                     rol: "CEO",
                     desc: "Controllo generale dell'azienda",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Responsabile del dipartimento finanziario",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "Responsabile dell'implementazione delle operazioni",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 },
                 {
                     img: iazzettaImg,
                     name: "Juan Manuel Lazzetta",
                     rol: "CEO",
                     desc: "Controllo generale dell'azienda",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Responsabile del dipartimento finanziario",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "Responsabile dell'implementazione delle operazioni",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 },
                 {
                     img: iazzettaImg,
                     name: "Juan Manuel Lazzetta",
                     rol: "CEO",
                     desc: "Controllo generale dell'azienda",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
                     desc: "Responsabile del dipartimento finanziario",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
                     img: lucas_contrerasImg,
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "Responsabile dell'implementazione delle operazioni",
-                    linkedin: ""
+                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 }
             ]
         }
