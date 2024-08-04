@@ -2,6 +2,7 @@ import "./style.css"
 import { Button } from "../../components"
 import useWindowSize from "../../customHooks/useWindowSize"
 import { useLanguage } from "../../context/languageContext"
+import { Link } from "react-router-dom"
 
 const Enhance = () => {
 
@@ -32,7 +33,7 @@ const Enhance = () => {
             <div className="enhance-textContainer">
                 <h2>{translations[language].title}</h2>
                 <p>{translations[language].desc}</p>
-                {width < 1025 ? <button className="enchanceContainer-customButton">Empieza</button> : <Button title={translations[language].buttonTitle} />}
+                {width < 1025 ? <button className="enchanceContainer-customButton">Empieza</button> : <Link to={"/contact"}><Button title={translations[language].buttonTitle} /></Link>}
             </div>
         </section>
     )

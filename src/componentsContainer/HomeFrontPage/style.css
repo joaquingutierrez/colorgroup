@@ -82,9 +82,9 @@
 }
 
 .homeFrontPage-titleContainer h2 {
-    font-size: 12.5rem;
+    font-size: 200px;
     font-weight: 400;
-    line-height: 15.625rem;
+    line-height: 250px;
     margin: 0;
     color: var(--red-color);
     position: absolute;
@@ -137,10 +137,10 @@
 }
 
 .homeFrontPage-listContainer li {
-    font-size: 2rem;
+    font-size: 32px;
     font-style: italic;
     font-weight: 400;
-    line-height: 2.5rem;
+    line-height: 40px;
 }
 
 @media (799px < width < 1137px) or (height < 850px) {
@@ -159,8 +159,8 @@
     }
 
     .homeFrontPage-titleContainer h2 {
-        font-size: 9.375rem;
-        line-height: 11.719rem;
+        font-size: 150px;
+        line-height: 187px;
     }
 
     .homeFrontPage-listContainer {
@@ -168,8 +168,8 @@
     }
 
     .homeFrontPage-listContainer li {
-        font-size: 1.5rem;
-        line-height: 1.875rem;
+        font-size: 24px;
+        line-height: 30px;
     }
 }
 
@@ -189,8 +189,8 @@
     }
 
     .homeFrontPage-titleContainer h2 {
-        font-size: 5rem;
-        line-height: 6.25rem;
+        font-size: 80px;
+        line-height: 100px;
     }
 
     .homeFrontPage-listContainer {
@@ -198,8 +198,8 @@
     }
 
     .homeFrontPage-listContainer li {
-        font-size: 0.875rem;
-        line-height: 1.094rem;
+        font-size: 14px;
+        line-height: 17.5px;
     }
 
     .homeFrontPage-listContainer li:nth-of-type(2),

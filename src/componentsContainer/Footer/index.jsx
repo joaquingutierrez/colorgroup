@@ -42,8 +42,8 @@ const Footer = ({ links }) => {
             <div className="footer-topContainer">
                 <div className="footer-smContainer">
                     {/* <a href="" target="_blank" rel="noopener noreferrer"><img src={linkeinLogo} alt="linkedin logo" /></a> */}
-                    <a href="https://www.instagram.com/colorcopyag/?hl=es-la" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} alt="facebook logo" /></a>
-                    <a href="https://www.facebook.com/colorcopyag/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img src={instagramLogo} alt="instagram logo" /></a>
+                    <a href="https://www.facebook.com/colorcopyag/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} alt="facebook logo" /></a>
+                    <a href="https://www.instagram.com/colorcopyag/?hl=es-la" target="_blank" rel="noopener noreferrer"><img src={instagramLogo} alt="instagram logo" /></a>
                 </div>
                 <div className="footer-linksContainer">
                     <ul>

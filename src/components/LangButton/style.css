@@ -12,7 +12,7 @@
     padding: 0;
     padding-right: 1.6rem;
     z-index: 5;
-    color: var(--text-color);
+    color: var(--white-color);
     transition: 0.2s ease-in-out;
     font-size: 1.125rem;
     font-weight: 400;
@@ -27,7 +27,7 @@
 
 .dropDown-button::after {
     content: "";
-    background-color: var(--text-color);
+    background-color: var(--white-color);
     position: absolute;
     height: 0.03rem;
     width: 0.6rem;
@@ -38,7 +38,7 @@
 
 .dropDown-button::before {
     content: "";
-    background-color: var(--text-color);
+    background-color: var(--white-color);
     position: absolute;
     height: 0.03rem;
     width: 0.6rem;

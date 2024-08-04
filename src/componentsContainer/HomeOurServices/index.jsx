@@ -10,7 +10,7 @@ const HomeOurServices = () => {
 
     const { language } = useLanguage()
 
-    const { width } = useWindowSize();
+    const { width, height } = useWindowSize();
 
     const translations = {
         spanish: {
@@ -89,7 +89,7 @@ const HomeOurServices = () => {
                 <h2>{translations[language].title}</h2>
                 <p>{translations[language].desc}</p>
             </div>
-            {width < 1025 ? <SwippeableGallery items={translations[language].items} /> : (
+            {width < 1025 || height < 840 ? <SwippeableGallery items={translations[language].items} /> : (
                 <>
                     <ItemsGallery items={translations[language].items} />
                     <div className="homeOurServices-transition"></div>
