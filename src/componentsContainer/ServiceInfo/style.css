@@ -12,9 +12,9 @@
 }
 
 .servicesInfoContainer h2 {
-    font-size: 6.25rem;
+    font-size: 100px;
     font-weight: 700;
-    line-height: 6.25rem;
+    line-height: 100px;
     box-sizing: border-box;
     margin: 0;
 }
@@ -48,9 +48,9 @@
 }
 
 .servicesInfo-item-textContainer h3 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 500;
-    line-height: 2.5rem;
+    line-height: 40px;
     text-align: left;
     margin: 0;
     margin-top: 114px;
@@ -58,18 +58,18 @@
 
 .servicesInfo-item-textContainer p {
     font-family: Familjen Grotesk;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 1.688rem;
+    line-height: 27px;
     text-align: left;
     margin: 0;
     margin-top: 20px;
 }
 
 .servicesInfo-item-list {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 1.875rem;
+    line-height: 30px;
     text-align: left;
     color: var(--light-gray2);
     margin: 0;
@@ -97,8 +97,8 @@
     }
 
     .servicesInfoContainer h2 {
-        font-size: 2.25rem;
-        line-height: 2rem;
+        font-size: 36px;
+        line-height: 32px;
         margin-left: 29px;
         margin-right: 29px;
     }
@@ -108,13 +108,13 @@
     }
 
     .servicesInfo-item-textContainer h3 {
-        line-height: 2.172rem;
+        line-height: 34.752px;
         margin-top: 76px;
     }
 
     .servicesInfo-item-textContainer p {
-        font-size: 1.125rem;
-        line-height: 1.406rem;
+        font-size: 18px;
+        line-height: 22.5px;
         margin: 0;
         margin-top: 16px;
     }
@@ -149,21 +149,21 @@
     }
 
     .servicesInfoContainer h2 {
-        font-size: 2rem;
-        line-height: 1.688rem;
+        font-size: 32px;
+        line-height: 27px;
         margin-left: 23px;
         margin-right: 155px;
         margin-bottom: 60px;
     }
 
     .servicesInfo-item-textContainer h3 {
-        font-size: 1.75rem;
-        line-height: 2.188rem;
+        font-size: 28px;
+        line-height: 35px;
         margin-top: 0;
     }
     .servicesInfo-item-textContainer p {
-        font-size: 1rem;
-        line-height: 1.25rem;
+        font-size: 16px;
+        line-height: 20px;
         margin: 0;
         margin-top: 16px;
         margin-bottom: 24px;
