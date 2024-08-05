@@ -33,6 +33,7 @@ const ContactInfo = () => {
                         <li><img src={phone_logo} alt="Phone Logo" /><p className="contact-infoContent">+54 9 3547459665</p></li>
                         <li><img src={mail_logo} alt="Email Logo" /><p className="contact-infoContent">contacto@colorcopygroup.com<br />colorcopyag@gmail.com</p></li>
                         <li><img src={ubication_logo} alt="Ubication Logo" /><p className="contact-infoContent">Raúl Alfonsín 157, Alta Gracia Córdoba</p></li>
+                        <li><img src={ubication_logo} alt="Ubication Logo" /><p className="contact-infoContent">Strada di Colle Oliveto 17 Narni • Terni Italia </p></li>
                         <li><img src={whatsapp_logo} alt="whatsapp Logo" /><p className="contact-infoContent">Whatsapp Live Chat</p></li>
                     </ul>
                 </div>

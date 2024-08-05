@@ -4,6 +4,7 @@ import "./style.css"
 import linkeinLogo from "../../assets/logos/linkedin_logo.png"
 import facebookLogo from "../../assets/logos/facebook_logo.png"
 import instagramLogo from "../../assets/logos/instagram_logo.png"
+import xLogo from "../../assets/logos/x_logo.png"
 import { useLanguage } from "../../context/languageContext"
 
 const Footer = ({ links }) => {
@@ -41,9 +42,10 @@ const Footer = ({ links }) => {
         <footer className="footerContainer">
             <div className="footer-topContainer">
                 <div className="footer-smContainer">
-                    {/* <a href="" target="_blank" rel="noopener noreferrer"><img src={linkeinLogo} alt="linkedin logo" /></a> */}
+                    <a href="https://www.linkedin.com/company/colorcopygroup/" target="_blank" rel="noopener noreferrer"><img src={linkeinLogo} alt="linkedin logo" /></a>
                     <a href="https://www.facebook.com/colorcopyag/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} alt="facebook logo" /></a>
                     <a href="https://www.instagram.com/colorcopyag/?hl=es-la" target="_blank" rel="noopener noreferrer"><img src={instagramLogo} alt="instagram logo" /></a>
+                    <a href="https://x.com/colorcopygroup?s=21&t=PCDXWuP89ns7vghK1HDEqw" target="_blank" rel="noopener noreferrer"><img src={xLogo} alt="X logo" /></a>
                 </div>
                 <div className="footer-linksContainer">
                     <ul>

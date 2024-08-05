@@ -1,6 +1,7 @@
 import "./style.css"
 import useWindowSize from "../../customHooks/useWindowSize"
 import { useLanguage } from "../../context/languageContext"
+import ubicationLogo from "../../assets/logos/ubication_logo.png"
 
 const Ubication = () => {
 
@@ -40,7 +41,9 @@ const Ubication = () => {
                     </div>
                 }
                 <div>
-                    <h4>Raúl Alfonsín 157, Alta Gracia Córdoba <img src="" alt="" /></h4>
+                    <h4>Raúl Alfonsín 157, Alta Gracia Córdoba <img src={ubicationLogo} alt="Ubicacion" /></h4>
+                    <h4>Strada di Colle Oliveto 17 Narni • Terni Italia <img src={ubicationLogo} alt="Ubicacion" /></h4>
+                    
                     <div>
                         <h4>{translations[language].days1}</h4>
                         <p>9:00 AM - 1:00 PM</p>

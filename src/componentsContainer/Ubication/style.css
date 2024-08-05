@@ -40,8 +40,16 @@
     font-weight: 400;
     line-height: 1.563rem;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 16px;
     margin-bottom: 16px;
+}
+
+.ubication-textContainer h4 img {
+    width: 24px;
+}
+
+.ubication-textContainer h4:first-of-type {
+    margin-top: 50px;
 }
 
 .ubication-textContainer p {
