@@ -1,5 +1,5 @@
 .servicesInfoContainer {
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 80px;
     padding-left: 80px;
     padding-right: 80px;
@@ -40,7 +40,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 108px;
+    gap: 90px;
 }
 
 .servicesInfo-item-textContainer {
@@ -53,7 +53,11 @@
     line-height: 40px;
     text-align: left;
     margin: 0;
-    margin-top: 114px;
+    margin-top: 90px;
+}
+
+.servicesInfo-item-textContainer h3:first-of-type {
+    margin-top: 100px;
 }
 
 .servicesInfo-item-textContainer p {
@@ -82,6 +86,20 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+@media (1249px < width < 1500px) {
+    .servicesInfoContainer h2 {
+        font-size: 80px;
+        line-height: 75px;
+    }
+}
+
+@media (1024 < width < 1250px) {
+    .servicesInfoContainer h2 {
+        font-size: 60px;
+        line-height: 55px;
+    }
 }
 
 @media (799px < width < 1025px) {

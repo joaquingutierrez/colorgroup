@@ -1,7 +1,6 @@
 .whyColorGroupContainer {
     margin-top: 82px;
-    height: 100vh;
-    min-height: 700px;
+    min-height: 100vh;
     position: relative;
     color: var(--white-color);
     display: flex;
@@ -18,9 +17,9 @@
 }
 
 .whyColorGroupContainer h2 {
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 700;
-    line-height: 4rem;
+    line-height: 64px;
     letter-spacing: -0.01em;
     width: 500px;
     margin: 0;
@@ -28,17 +27,17 @@
 }
 
 .whyColorGroupContainer h3 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 500;
-    line-height: 2.5rem;
+    line-height: 40px;
     margin: 0;
     margin-top: 36px;
 }
 
 .whyColorGroupContainer p {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 1.875rem;
+    line-height: 30px;
     margin: 0;
     margin-top: 16px;
 }
@@ -58,9 +57,9 @@
     content: "0" counter(list-counter);
     position: absolute;
     left: -105px;
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 4rem;
+    line-height: 64px;
     letter-spacing: -0.01em;
 }
 

@@ -10,7 +10,7 @@ const Services = () => {
 
     const { language } = useLanguage()
 
-    const { width } = useWindowSize()
+    const { width, height } = useWindowSize()
 
     const { isAtTop: isAtTopMaker1, elementRef: marker1Ref } = useScroll()
     const { isAtTop: isAtTopMaker2, elementRef: marker2Ref } = useScroll()
@@ -158,7 +158,7 @@ const Services = () => {
     return (
         <main>
             <ServicesFrontPage />
-            {width < 1025 ? <>
+            {width < 1600 || height < 900 ? <>
                 <h2 className="servicesPage-section-title">{translations[language].title}</h2>
                 <ServiceInfo title={translationsMarketing[language].title} items={translationsMarketing[language].items} />
                 <ServiceInfo title={translationsPublicity[language].title} items={translationsPublicity[language].items} />
