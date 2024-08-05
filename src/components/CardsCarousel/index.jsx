@@ -1,13 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSwipeable } from "react-swipeable";
 
-import "./style.css"
-import Card from "../Card"
+import "./style.css";
+import Card from "../Card";
+import useWindowSize from "../../customHooks/useWindowSize";
 
 const CardsCarousel = ({ items }) => {
-
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [itemCountInView, setItemCountInView] = useState(1);
+    const [totalLevels, setTotalLevels] = useState(0);
+    const { width } = useWindowSize();
 
-    const totalLevels = Math.ceil(items.length / 3);
+    useEffect(() => {
+        if (width > 1024) {
+            setItemCountInView(3);
+        } else if (width > 799) {
+            setItemCountInView(2);
+        } else {
+            setItemCountInView(1);
+        }
+    }, [width]);
+
+    useEffect(() => {
+        setTotalLevels(Math.ceil(items.length / itemCountInView));
+    }, [items.length, itemCountInView]);
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % totalLevels);
@@ -17,16 +33,23 @@ const CardsCarousel = ({ items }) => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + totalLevels) % totalLevels);
     };
 
+    const handlers = useSwipeable({
+        onSwipedLeft: () => nextSlide(),
+        onSwipedRight: () => prevSlide(),
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true,
+    });
+
     return (
         <>
-            <div className="cardCarouselContainer-outer">
+            <div className="cardCarouselContainer-outer" {...handlers}>
                 <div
                     className="cardCarouselContainer"
-                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                    style={{ transform: `translateX(-${currentIndex * (width < 800 ? 80 : 100)}%)` }}
                 >
-                    {items.map((item, index) => {
-                        return <Card key={index} item={item} />
-                    })}
+                    {items.map((item, index) => (
+                        <Card key={index} item={item} />
+                    ))}
                 </div>
             </div>
             <div className="cardCarousel-utils">
@@ -54,7 +77,7 @@ const CardsCarousel = ({ items }) => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default CardsCarousel
+export default CardsCarousel;
