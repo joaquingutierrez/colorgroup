@@ -45,7 +45,7 @@ const CardsCarousel = ({ items }) => {
             <div className="cardCarouselContainer-outer" {...handlers}>
                 <div
                     className="cardCarouselContainer"
-                    style={{ transform: `translateX(-${currentIndex * (width < 800 ? 80 : 100)}%)` }}
+                    style={{ transform: `translateX(-${currentIndex * (width < 800 ? 84 : 100)}%)` }}
                 >
                     {items.map((item, index) => (
                         <Card key={index} item={item} />

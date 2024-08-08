@@ -9,8 +9,8 @@ const SwippeableGallery = ({ items }) => {
     const [animation, setAnimation] = useState(false)
 
     const handlers = useSwipeable({
-        onSwipedLeft: () => prevSlide(),
-        onSwipedRight: () => nextSlide(),
+        onSwipedLeft: () => nextSlide(),
+        onSwipedRight: () => prevSlide(),
         preventDefaultTouchmoveEvent: true,
         trackMouse: true
     });
@@ -22,11 +22,15 @@ const SwippeableGallery = ({ items }) => {
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
     };
 
     const handleClick = () => {
         setAnimation(!animation)
+    }
+
+    const handleSelect = (index) => {
+        setCurrentIndex(index)
     }
 
 
@@ -50,7 +54,8 @@ const SwippeableGallery = ({ items }) => {
                 {Array.from({ length: totalLevels }).map((_, index) => (
                     <div
                         key={index}
-                        className={`cardCarousel-level margin-30 ${currentIndex === index ? "cardCarousel-level-selected" : ""}`}
+                        className={`cardCarousel-level size-12 margin-30 ${currentIndex === index ? "cardCarousel-level-selected" : ""}`}
+                        onClick={() => handleSelect(index)}
                     ></div>
                 ))}
             </div>

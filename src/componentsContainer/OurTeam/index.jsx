@@ -18,13 +18,16 @@ const OurTeam = () => {
                     name: "Juan Manuel Iazzetta",
                     rol: "CEO",
                     desc: "Control general de la empresa",
+                    tel: "+39 379 220 7910",
                     linkedin: "https://www.linkedin.com/in/iazzettajm/"
                 },
                 {
                     img: horacio_contrerasImg,
                     name: "Horacio Perez Contreras",
                     rol: "CFO",
-                    desc: "Engargado del departamento de finanzas",
+                    desc: "Encargado del departamento de finanzas",
+                    tel: "",
+
                     linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
                 },
                 {
@@ -32,48 +35,7 @@ const OurTeam = () => {
                     name: "Lucas Perez Contreras",
                     rol: "COO",
                     desc: "Encargado de la implementación operaciones",
-                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
-                },
-                {
-                    img: iazzettaImg,
-                    name: "Juan Manuel Iazzetta",
-                    rol: "CEO",
-                    desc: "Control general de la empresa",
-                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
-                },
-                {
-                    img: horacio_contrerasImg,
-                    name: "Horacio Perez Contreras",
-                    rol: "CFO",
-                    desc: "Engargado del departamento de finanzas",
-                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
-                },
-                {
-                    img: lucas_contrerasImg,
-                    name: "Lucas Perez Contreras",
-                    rol: "COO",
-                    desc: "Encargado de la implementación operaciones",
-                    linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
-                },
-                {
-                    img: iazzettaImg,
-                    name: "Juan Manuel Iazzetta",
-                    rol: "CEO",
-                    desc: "Control general de la empresa",
-                    linkedin: "https://www.linkedin.com/in/iazzettajm/"
-                },
-                {
-                    img: horacio_contrerasImg,
-                    name: "Horacio Perez Contreras",
-                    rol: "CFO",
-                    desc: "Engargado del departamento de finanzas",
-                    linkedin: "https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/"
-                },
-                {
-                    img: lucas_contrerasImg,
-                    name: "Lucas Perez Contreras",
-                    rol: "COO",
-                    desc: "Encargado de la implementación operaciones",
+                    tel: "+39 379 114 6895",
                     linkedin: "https://www.linkedin.com/in/lucas-perez-contreras-438748302/"
                 }
             ]

@@ -42,6 +42,10 @@
     margin-top: 24px;
 }
 
+.card-phoneIcon {
+    width: 1.5rem;
+}
+
 @media (799px < width < 1025px) {
     .cardContainer {
         flex: 0 0 50%;
