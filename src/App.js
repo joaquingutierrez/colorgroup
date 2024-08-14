@@ -14,7 +14,7 @@ function App() {
         path: "/services"
       },
       {
-        title: "Nostros",
+        title: "Nosotros",
         path: "/about"
       },
       {

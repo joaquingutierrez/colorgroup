@@ -104,10 +104,6 @@
         background-color: var(--white-color);
     }
 
-    .dropDown-hiddenContent {
-        background-color: var(--text-color);
-    }
-
     .dropDown-hiddenContent li {
         color: var(--white-color);
     }

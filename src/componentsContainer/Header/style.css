@@ -65,7 +65,8 @@
         position: absolute;
         right: -100%;
         top: 100%;
-        background-color: var(--text-color);
+        background-color: rgba(22, 22, 23, 0.85);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         color: var(--white-color);
         transition: 0.4s ease-in-out;
         width: 100%;
