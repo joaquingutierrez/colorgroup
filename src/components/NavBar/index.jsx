@@ -9,7 +9,7 @@ const NavBar = ({ links }) => {
             <ul>
                 {links.map((item, index) => {
                     return (
-                        <li key={index} className={item.special ? "navLink-special" : "navLink-line-animation"}>
+                        <li key={index} className={item.special ? "navLink-special navLink-specialColor" : "navLink-line-animation"}>
                             <NavLink to={item.path}>{item.title}</NavLink>
                         </li>
                     )
